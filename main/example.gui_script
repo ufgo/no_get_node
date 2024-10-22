@@ -1,0 +1,5 @@
+local ui=require("no_get_node.no_get_node")
+
+function init(self)
+	ui.animate("box", "position.x", ui.get_position("box").x+600, ui.EASING_LINEAR, 3, 0, nil, ui.PLAYBACK_LOOP_PINGPONG)
+end
